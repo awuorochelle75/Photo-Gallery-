@@ -4,7 +4,7 @@ function Searchbar() {
     return(
         <div className="search">
         <h1><em>Let's Find That picture!</em></h1>
-        <input type ="text" className='searchbar'  placeholder="Search photo!" />
+        <input type ="text" className='searchbar'  placeholder="Search photo" />
         <select className="genre-filter">
     <option value="all">All Categories</option>
     <option value="nature">Nature</option>
