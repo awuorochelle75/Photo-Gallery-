@@ -9,7 +9,7 @@ function Searchbar({onSearch, onCategoryChange, onUpload}) {
         const term = e.target.value;
         setSearchTerm(term);
         if (onSearch) {
-            onSearch(term); // Pass search term to parent component
+            onSearch(term); 
         }
     };    
 
@@ -17,13 +17,13 @@ function Searchbar({onSearch, onCategoryChange, onUpload}) {
         const category = e.target.value;
         setSelectedCategory(category);
         if (onCategoryChange) {
-            onCategoryChange(category); // Pass category to parent component
+            onCategoryChange(category); 
         }
     };
 
     const handleUploadClick = () => {
         if (onUpload) {
-            onUpload(); // Notify parent component about upload action
+            onUpload(); 
         }
     };
 
