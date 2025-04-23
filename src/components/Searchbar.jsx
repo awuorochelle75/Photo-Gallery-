@@ -1,11 +1,37 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-function Searchbar() {
+function Searchbar({onSearch, onCategoryChange, onUpload}) {
+    const [searchTerm, setSearchTerm] =useState(" ");
+
+    const [selectedCategory, setSelectedCategory] = useState("all");
+
+    const handleInputChange = (e) => {
+        const term = e.target.value;
+        setSearchTerm(term);
+        if (onSearch) {
+            onSearch(term); // Pass search term to parent component
+        }
+    };    
+
+    const handleCategoryChange = (e) => {
+        const category = e.target.value;
+        setSelectedCategory(category);
+        if (onCategoryChange) {
+            onCategoryChange(category); // Pass category to parent component
+        }
+    };
+
+    const handleUploadClick = () => {
+        if (onUpload) {
+            onUpload(); // Notify parent component about upload action
+        }
+    };
+
     return(
         <div className="search">
         <h1><em>Let's Find That picture!</em></h1>
-        <input type ="text" className='searchbar'  placeholder="Search photo" />
-        <select className="genre-filter">
+        <input type ="text" className='searchbar'  placeholder="Search photo" value={searchTerm} onChange={handleInputChange} />
+        <select className="genre-filter" value={selectedCategory}  onChange={handleCategoryChange}>
     <option value="all">All Categories</option>
     <option value="nature">Nature</option>
     <option value="landscape">Landscape</option>
@@ -21,7 +47,7 @@ function Searchbar() {
     <option value="events">Events</option>
 </select>
 
-<button className="upload-btn" >
+<button className="upload-btn"  onClick={handleUploadClick} >
           Upload Image
         </button>
 

@@ -1,14 +1,19 @@
 import React from 'react';
 
-
-function NavBar ()  {
+function NavBar({ links = [
+  { text: "Home", href: "#home" },
+  { text: "About", href: "#about" },
+  { text: "Favorites", href: "#favorites" },
+  { text: "Contact Us", href: "#contact" }
+] }) {
   return (
     <nav className="navbar">
       <ul>
-        <li ><a href="#home"  className="links">Home</a></li>
-        <li ><a href="#about"  className="links">About</a></li>
-        <li><a href="#favorites"  className="links">Favorites</a></li>
-        <li><a href="#favorites"  className="links">Contact Us</a></li>
+        {links.map((link, index) => (
+          <li key={index}>
+            <a href={link.href} className="links">{link.text}</a>
+          </li>
+        ))}
       </ul>
     </nav>
   );
