@@ -7,8 +7,8 @@ function NavBar ()  {
       <ul>
         <li ><a href="#home"  className="links">Home</a></li>
         <li ><a href="#about"  className="links">About</a></li>
-        <li><a href="#Favorites"  className="links">Favorites</a></li>
-       
+        <li><a href="#favorites"  className="links">Favorites</a></li>
+        <li><a href="#favorites"  className="links">Contact Us</a></li>
       </ul>
     </nav>
   );
