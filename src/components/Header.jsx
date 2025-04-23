@@ -3,11 +3,11 @@ import Navbar from './NavBar';
 
 
 
-const Header = () => {
+function  Header  ({headtext}) {
   return (
     <header className="header">
       <div className="header-content">
-        <h1 className="header-text">PhoGalleria</h1> 
+        <h1 className="header-text">{headtext}</h1> 
         <span>  <Navbar /></span>
        
       </div>

@@ -21,6 +21,11 @@ function Searchbar() {
     <option value="events">Events</option>
 </select>
 
+<button className="upload-btn" >
+          Upload Image
+        </button>
+
+
         </div>
     )
 }
