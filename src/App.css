@@ -61,4 +61,22 @@ nav ul li a{
  
 }
 
+.searchbar{
+   
+  width:50%;
+  
+  /*The use of these two is what brings out that nice-looking search bar in my web page */
+  border: 0.5px solid #cccccc;
+  border-radius: 5px;
+  padding:20px;
+  
+}
+
+.search{
+  display: block;
+ text-align: center;
+  padding:10px;
+  
+}
+
 
