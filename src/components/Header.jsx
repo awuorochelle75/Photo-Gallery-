@@ -1,10 +1,13 @@
-import React from "react";
+import React from 'react';
+import Navbar from './NavBar';
 
-function Header() {
+const Header = () => {
   return (
-    <header>
-      <h1 className="head">Phogalleria 
-      </h1>
+    <header className="header">
+      <div className="header-content">
+        <h1>PhoGalleria</h1>
+      </div>
+      <Navbar />
     </header>
   );
 }
