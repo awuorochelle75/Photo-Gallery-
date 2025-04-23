@@ -64,5 +64,22 @@
     margin: 0;
     color: #555;
   }
+  .load-more-btn {
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: block;
+    font-size: 1rem;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .load-more-btn:hover {
+    background-color: #0d6efd;
+  }
+  
   
   
