@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Searchbar from './components/Searchbar';
 import './App.css';
+import GalleryApp from './GalleryApp';
 
 function App() {
   const [title] = useState("PhoGalleria");
@@ -18,6 +19,7 @@ function App() {
           <div className="home-page">
             <Searchbar />
             {/* Gallery content will go here */}
+            <GalleryApp />
           </div>
         } />
         
@@ -26,5 +28,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
