@@ -18,7 +18,6 @@ function App() {
         <Route path="/" element={
           <div className="home-page">
             <Searchbar />
-            {/* Gallery content will go here */}
             <GalleryApp />
           </div>
         } />
@@ -28,3 +27,5 @@ function App() {
     </Router>
   );
 }
+
+export default App;
