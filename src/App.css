@@ -5,16 +5,60 @@ body{
 
 
 .header-content{
-  color:black;
+  color:white;
   display:flex;
-  justify-content: space-between;
-   padding:10px;
-   background-image: url("/images/hero2.png");
-   background-position: center;
-   background-size:cover;
-  
-   background-repeat: no-repeat;
-   flex-wrap: wrap;
- 
+  justify-content: center;
+  padding:10px;
+  background-image: url("/images/hero.jpg");
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-wrap: wrap;
+  height:100vh;
+  width:100wh;
+  position: relative;
 
 }
+
+.header-text{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar ul{
+  list-style:none;
+  display: flex;
+  padding:10px; 
+   justify-content: center;
+  
+}
+
+.navbar ul li{
+  margin: 20px;
+ ;
+}
+
+nav ul li a{
+  color:white;
+  font-weight: bold;
+  text-decoration:none;
+  padding:30px;
+  font-display: bold;
+  font-size:1rem;
+ 
+ 
+}
+
+.links:hover{
+   color:#FFDB58;
+   border-bottom: 1px solid #ffd700;
+  
+ 
+}
+
+
