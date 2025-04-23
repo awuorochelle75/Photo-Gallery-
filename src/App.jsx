@@ -1,12 +1,16 @@
-import React from "react"
+import React, { useState } from "react"
 import Favourites from "./components/favourites"
 import About from "./components/about"
+
 function App() {
 
+  function handleFavouritePhoto(updatedPhoto){
 
+  } 
+
+  
   return (
     <>
-    <Favourites />
     <About />
     </>
   )
