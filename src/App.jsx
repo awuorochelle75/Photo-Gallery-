@@ -21,10 +21,7 @@ function App() {
           </div>
         } />
         
-        {/* Other simple pages */}
-        <Route path="/about" element={<div>About Page</div>} />
-        <Route path="/favorites" element={<div>Favorites</div>} />
-        <Route path="/contact" element={<div>Contact Us</div>} />
+        
       </Routes>
     </Router>
   );
