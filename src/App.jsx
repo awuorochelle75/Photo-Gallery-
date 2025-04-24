@@ -27,7 +27,12 @@ function App() {
         
         {/* About */}
   <Route path="/about" element={<About />} />
-  
+{/* Contact */}
+<Route path="/contact" element={<Contact />} />
+
+
+
+
       </Routes>
     </Router>
   );
