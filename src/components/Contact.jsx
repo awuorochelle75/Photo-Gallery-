@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm, ValidationError } from '@formspree/react';
 import "../Contact.css"
+import Navbar from './NavBar';
 
 function Contact(){
     const [state, handleSubmit] = useForm('xjkwvlrg'); 
@@ -10,6 +11,7 @@ function Contact(){
         <div className="contact">
         <div className="contact-form">
             <form onSubmit={handleSubmit}>
+                
             <label htmlFor="name">Name
             <input id="name"
                    type="text"

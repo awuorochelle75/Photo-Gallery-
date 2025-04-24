@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Searchbar from './components/Searchbar';
 import './App.css';
@@ -9,29 +8,37 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Favourites from './components/Favourites';
 
-function App() {
+function AppContent() {
   const [title] = useState("PhoGalleria");
+  const location = useLocation();
+  
+  // List of paths where header should be hidden
+  const hideHeaderPaths = ['/about', '/contact', '/favorites'];
 
   return (
-    <Router>
-      <Header headtext={title} />
+    <>
+      {/* Show header only if current path is not in hideHeaderPaths */}
+      {!hideHeaderPaths.includes(location.pathname) && <Header headtext={title} />}
       
       <Routes>
-        {/* Home route - contains Searchbar and future gallery */}
         <Route path="/" element={
           <div className="home-page">
             <Searchbar />
             <GalleryApp />
           </div>
         } />
-        
-        {/* About */}
-  <Route path="/about" element={<About />} />
-{/* Contact */}
-  <Route path="/contact" element={<Contact />} />
-
-
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/favorites" element={<Favourites />} />
       </Routes>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
     </Router>
   );
 }
