@@ -21,10 +21,9 @@
 
 .contact-title-section {
     flex: 1;
-    background-image: url('src/contact-form-background-image.jpg');
+    background-image:url(" src/luxury-plain-green-gradient-abstract-studio-background-empty-room-with-space-your-text-picture_1258-63953.avif");
     background-size: cover;
     background-position: center;
-    position: relative;
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -34,7 +33,8 @@
     position: absolute;
     bottom: 2rem;
     left: 2rem;
-    color: white;
+    position: relative;
+    color:black;
     font-size: 3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin: 0;
