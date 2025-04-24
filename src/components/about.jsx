@@ -11,7 +11,7 @@ function About(){
                 <div className="about-container">
                     <div className="about-card"> 
                         <h3> View and Like Your Favourite Photos!</h3>
-                        <p> Browse endlessly on MyPhotoGallery, viewin and liking g handpicked and curated images from emerging photographers around the world in collobaration with Unsplash AXIOS</p>
+                        <p> Browse endlessly on MyPhotoGallery, viewing and liking handpicked and curated images from emerging photographers around the world in collobaration with Unsplash AXIOS</p>
                     </div> 
             
                     <div className="about-card">

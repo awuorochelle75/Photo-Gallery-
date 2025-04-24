@@ -35,9 +35,6 @@ const GalleryApp = () => {
       if (prev.find(img => img.id === image.id)) {
         return prev.filter(img => img.id !== image.id); 
       } else {
-        return [...prev, image]; 
-        return prev.filter(img => img.id !== image.id);
-      } else {
         return [...prev, image];
       }
     });

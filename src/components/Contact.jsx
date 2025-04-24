@@ -32,7 +32,7 @@ function Contact(){
 
 
             <label htmlFor="message">Message
-            <input id="message"
+            <textarea id="message"
                    type="message"
                    name="message"
                    placeholder="Your Message"/>

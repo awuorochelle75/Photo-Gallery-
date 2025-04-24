@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 function Searchbar({onSearch, onCategoryChange, onUpload}) {
-    const [searchTerm, setSearchTerm] =useState(" ");
+    const [searchTerm, setSearchTerm] =useState("");
 
     const [selectedCategory, setSelectedCategory] = useState("all");
 
