@@ -8,7 +8,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Favourites from './components/Favourites';
 
-function App() {
+function AppContent() {
   const [title] = useState("PhoGalleria");
   const location = useLocation();
   
@@ -35,3 +35,12 @@ function App() {
   );
 }
 
+function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
+  );
+}
+
+export default App;
