@@ -13,7 +13,7 @@ const GalleryApp = () => {
     axios.get(`http://localhost:3000/images`, {
       params: {
         _page: page,
-        _limit: 29,
+        _limit: 150,
         _sort: 'id',
         _order: 'asc'  
       }
