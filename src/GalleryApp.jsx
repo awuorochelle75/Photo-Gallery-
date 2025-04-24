@@ -7,12 +7,13 @@ const GalleryApp = () => {
   const [page, setPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
 
+
   const fetchImages = () => {
     setIsLoading(true);
     axios.get(`http://localhost:3000/images`, {
       params: {
         _page: page,
-        _limit: 6,
+        _limit: 29,
         _sort: 'id',
         _order: 'asc'  
       }
@@ -30,9 +31,9 @@ const GalleryApp = () => {
   const handleLike = (image) => {
     setFavorites(prev => {
       if (prev.find(img => img.id === image.id)) {
-        return prev.filter(img => img.id !== image.id); // un-like
+        return prev.filter(img => img.id !== image.id);
       } else {
-        return [...prev, image]; // like
+        return [...prev, image];
       }
     });
   };
