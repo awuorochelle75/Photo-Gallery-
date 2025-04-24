@@ -23,7 +23,7 @@ function AppContent() {
       <Routes>
         <Route path="/" element={
           <div className="home-page">
-            <Searchbar />
+         
             <GalleryApp />
           </div>
         } />

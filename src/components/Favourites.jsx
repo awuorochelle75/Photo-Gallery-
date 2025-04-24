@@ -8,7 +8,7 @@ function Favourites({favorites = [], onRemove}) {
         <section>
             <div className="favourites-header">
                 <h2>Favourites ({ favorites.length })</h2>
-                <Navbar />
+             
             </div>
             <div className="favourites-container">
              <div className="favourites-grid">
