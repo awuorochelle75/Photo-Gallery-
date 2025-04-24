@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import ImageList from './components/ImageList';
 import axios from 'axios';
+import Favourites from './components/favourites';
 
 const GalleryApp = () => {
   const [images, setImages] = useState([]);
   const [page, setPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
+  const [favourite, setFavorites] = useState([])
 
   const fetchImages = () => {
     setIsLoading(true);
@@ -60,10 +62,24 @@ const GalleryApp = () => {
     setPage(prev => prev + 1);
   };
 
+  useEffect(() => {
+    const savedFavorites = JSON.parse(localStorage.getItem('favourites')) || [];
+    setFavorites(savedFavorites);
+  }, []); 
+
+  useEffect(() => {
+    localStorage.setItem('favourites', JSON.stringify(favorites));
+  }, [favorites]);
+ 
+  const handleRemoveFavourite = (image) => {
+    setFavourites(prev => prev.filter(img => img.id !== image.id));
+  };
+
   return (
     <div className="gallery-container">
       <h1 className="gallery-title">My Photo Gallery</h1>
       <ImageList images={images}  onLike={handleLike} />
+      <Favourites favourites={favourites} onRemove={handleRemoveFavourite}/>
       {isLoading && <p>Loading more images...</p>}
       {!isLoading && (
         <button className="load-more-btn" onClick={handleLoadMoreClick}>
