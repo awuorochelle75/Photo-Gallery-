@@ -2,1353 +2,454 @@
   "images": [
     {
       "id": 1,
-      "url": "https://picsum.photos/1600/900",
-      "width": 1600,
-      "height": 900,
-      "title": "Mountain Sunrise",
-      "description": "8K resolution of first light hitting snow-capped peaks",
-      "tags": ["mountains", "sunrise", "8K", "landscape"]
-    },
-    {
-      "id": 2,
-      "url": "https://picsum.photos/1200/1800",
-      "width": 1200,
-      "height": 1800,
-      "title": "Waterfall Portrait",
-      "description": "Tall cascading waterfall in vertical composition",
-      "tags": ["waterfall", "portrait", "nature"]
-    },
-    {
-      "id": 3,
       "url": "https://picsum.photos/3840/2160",
       "width": 3840,
       "height": 2160,
-      "title": "Ocean Sunset",
-      "description": "4K UHD golden hour over calm ocean waters",
-      "tags": ["ocean", "sunset", "4K", "ultraHD"]
+      "title": "Mountain Sunrise",
+      "description": "4K golden hour over alpine peaks",
+      "likes": 245,
+      "category": "Landscape",
+      "tags": ["mountains", "sunrise", "4K"]
+    },
+    {
+      "id": 2,
+      "url": "https://picsum.photos/3000/2000",
+      "width": 3000,
+      "height": 2000,
+      "title": "Gourmet Plating",
+      "description": "Artistic food composition",
+      "likes": 189,
+      "category": "Food Photography",
+      "tags": ["gourmet", "restaurant", "professional"]
+    },
+    {
+      "id": 3,
+      "url": "https://picsum.photos/2400/3600",
+      "width": 2400,
+      "height": 3600,
+      "title": "Runway Model",
+      "description": "High-fashion portrait",
+      "likes": 312,
+      "category": "Fashion",
+      "tags": ["model", "luxury", "designer"]
     },
     {
       "id": 4,
-      "url": "https://picsum.photos/800/800",
-      "width": 800,
-      "height": 800,
-      "title": "Macro Flower",
-      "description": "Square format close-up of blooming petals",
-      "tags": ["macro", "flower", "square"]
+      "url": "https://picsum.photos/4096/2304",
+      "width": 4096,
+      "height": 2304,
+      "title": "Safari Sunset",
+      "description": "African savanna wildlife",
+      "likes": 278,
+      "category": "Wildlife",
+      "tags": ["lion", "safari", "golden-hour"]
     },
     {
       "id": 5,
-      "url": "https://picsum.photos/2560/1440",
-      "width": 2560,
-      "height": 1440,
-      "title": "Autumn Forest",
-      "description": "QHD resolution of colorful fall foliage",
-      "tags": ["forest", "autumn", "QHD"]
-    },
-    {
-      "id": 6,
       "url": "https://picsum.photos/1920/1080?grayscale",
       "width": 1920,
       "height": 1080,
-      "title": "Urban Architecture",
-      "description": "Black and white cityscape in Full HD",
-      "tags": ["architecture", "grayscale", "urban"]
+      "title": "Urban Geometry",
+      "description": "Black and white architecture",
+      "likes": 156,
+      "category": "Black & White",
+      "tags": ["monochrome", "building", "contrast"]
+    },
+    {
+      "id": 6,
+      "url": "https://picsum.photos/2500/1667",
+      "width": 2500,
+      "height": 1667,
+      "title": "Tokyo Streets",
+      "description": "Nighttime urban exploration",
+      "likes": 421,
+      "category": "Street Photography",
+      "tags": ["neon", "city", "night"]
     },
     {
       "id": 7,
       "url": "https://picsum.photos/4000/3000",
       "width": 4000,
       "height": 3000,
-      "title": "Wildlife Close-up",
-      "description": "12MP high-res wildlife photography",
-      "tags": ["wildlife", "closeup", "high-res"]
+      "title": "Modern Museum",
+      "description": "Architectural masterpiece",
+      "likes": 198,
+      "category": "Architecture",
+      "tags": ["modern", "design", "museum"]
     },
     {
       "id": 8,
-      "url": "https://picsum.photos/1200/800",
-      "width": 1200,
-      "height": 800,
-      "title": "Desert Dunes",
-      "description": "Wide landscape of wind-sculpted sands",
-      "tags": ["desert", "landscape", "wide"]
+      "url": "https://picsum.photos/1800/2700",
+      "width": 1800,
+      "height": 2700,
+      "title": "Executive Portrait",
+      "description": "Professional headshot",
+      "likes": 134,
+      "category": "Portrait",
+      "tags": ["business", "professional", "studio"]
     },
     {
       "id": 9,
-      "url": "https://picsum.photos/1080/1920",
-      "width": 1080,
-      "height": 1920,
-      "title": "Waterfall Mobile",
-      "description": "Vertical composition optimized for mobile",
-      "tags": ["waterfall", "mobile", "vertical"]
+      "url": "https://picsum.photos/7680/4320",
+      "width": 7680,
+      "height": 4320,
+      "title": "Ocean Cliffside",
+      "description": "8K coastal landscape",
+      "likes": 387,
+      "category": "Nature",
+      "tags": ["water", "rocks", "aerial"]
     },
     {
       "id": 10,
-      "url": "https://picsum.photos/3840/2160/?blur=2",
-      "width": 3840,
-      "height": 2160,
-      "title": "Misty Mountains",
-      "description": "4K landscape with artistic blur effect",
-      "tags": ["mountains", "4K", "blurred"]
+      "url": "https://picsum.photos/3000/2000",
+      "width": 3000,
+      "height": 2000,
+      "title": "Wedding Dance",
+      "description": "Bride and groom first dance",
+      "likes": 512,
+      "category": "Events",
+      "tags": ["wedding", "romantic", "celebration"]
     },
     {
       "id": 11,
-      "url": "https://picsum.photos/600/400",
-      "width": 600,
-      "height": 400,
-      "title": "Coffee Close-up",
-      "description": "Standard definition beverage photography",
-      "tags": ["food", "closeup", "SD"]
+      "url": "https://picsum.photos/2000/3000",
+      "width": 2000,
+      "height": 3000,
+      "title": "Coffee Art",
+      "description": "Latte with heart design",
+      "likes": 276,
+      "category": "Food Photography",
+      "tags": ["coffee", "cafe", "artisan"]
     },
     {
       "id": 12,
-      "url": "https://picsum.photos/7680/4320",
-      "width": 7680,
-      "height": 4320,
-      "title": "Panoramic Vista",
-      "description": "8K ultra-wide landscape panorama",
-      "tags": ["panorama", "8K", "landscape"]
+      "url": "https://picsum.photos/2400/1600",
+      "width": 2400,
+      "height": 1600,
+      "title": "Street Style",
+      "description": "Urban fashion portrait",
+      "likes": 329,
+      "category": "Fashion",
+      "tags": ["streetwear", "urban", "trendy"]
     },
     {
       "id": 13,
-      "url": "https://picsum.photos/1000/1500",
-      "width": 1000,
-      "height": 1500,
-      "title": "Portrait Style",
-      "description": "3:2 aspect ratio portrait composition",
-      "tags": ["portrait", "vertical", "artistic"]
+      "url": "https://picsum.photos/3840/2160",
+      "width": 3840,
+      "height": 2160,
+      "title": "Desert Road",
+      "description": "4K desert highway",
+      "likes": 243,
+      "category": "Travel",
+      "tags": ["roadtrip", "adventure", "horizon"]
     },
     {
       "id": 14,
-      "url": "https://picsum.photos/1920/1200",
-      "width": 1920,
-      "height": 1200,
-      "title": "Widescreen Sunset",
-      "description": "16:10 aspect ratio for desktop wallpapers",
-      "tags": ["sunset", "widescreen", "desktop"]
+      "url": "https://picsum.photos/3000/2000?grayscale",
+      "width": 3000,
+      "height": 2000,
+      "title": "Elephant Portrait",
+      "description": "Monochrome wildlife closeup",
+      "likes": 298,
+      "category": "Black & White",
+      "tags": ["wildlife", "elephant", "texture"]
     },
     {
       "id": 15,
-      "url": "https://picsum.photos/400/400",
-      "width": 400,
-      "height": 400,
-      "title": "Icon Image",
-      "description": "Small square for thumbnails and icons",
-      "tags": ["thumbnail", "square", "small"]
+      "url": "https://picsum.photos/2500/2500",
+      "width": 2500,
+      "height": 2500,
+      "title": "Color Splash",
+      "description": "Abstract liquid colors",
+      "likes": 187,
+      "category": "Abstract",
+      "tags": ["colors", "liquid", "art"]
     },
     {
       "id": 16,
-      "url": "https://picsum.photos/2048/1152",
-      "width": 2048,
-      "height": 1152,
-      "title": "Game Background",
-      "description": "16:9 aspect ratio for game development",
-      "tags": ["game", "background", "HD"]
-    },
-    {
-      "id": 17,
-      "url": "https://picsum.photos/2400/1600",
-      "width": 2400,
-      "height": 1600,
-      "title": "Photography Print",
-      "description": "High-res 3:2 ratio for photo prints",
-      "tags": ["print", "high-res", "photography"]
-    },
-    {
-      "id": 18,
-      "url": "https://picsum.photos/1280/720",
-      "width": 1280,
-      "height": 720,
-      "title": "HD Video Frame",
-      "description": "Standard HD resolution for video content",
-      "tags": ["video", "HD", "frame"]
-    },
-    {
-      "id": 19,
-      "url": "https://picsum.photos/5000/5000",
-      "width": 5000,
-      "height": 5000,
-      "title": "Ultra High-Res Square",
-      "description": "Massive 25MP square composition",
-      "tags": ["square", "ultraHD", "high-res"]
-    },
-    {
-      "id": 20,
-      "url": "https://picsum.photos/854/480",
-      "width": 854,
-      "height": 480,
-      "title": "Mobile Video",
-      "description": "Standard mobile video resolution",
-      "tags": ["mobile", "video", "SD"]
-    },
-    {
-      "id": 21,
-      "url": "https://picsum.photos/1920/1080/?grayscale",
-      "width": 1920,
-      "height": 1080,
-      "title": "Minimalist Architecture",
-      "description": "Full HD black and white structural design",
-      "tags": ["architecture", "grayscale", "minimalist"]
-    },
-    {
-      "id": 22,
-      "url": "https://picsum.photos/3000/2000",
-      "width": 3000,
-      "height": 2000,
-      "title": "Professional Photo",
-      "description": "6MP high-quality image for commercial use",
-      "tags": ["professional", "commercial", "high-res"]
-    },
-    {
-      "id": 23,
-      "url": "https://picsum.photos/1600/1200",
-      "width": 1600,
-      "height": 1200,
-      "title": "Classic 4:3",
-      "description": "Traditional 4:3 aspect ratio composition",
-      "tags": ["classic", "4:3", "retro"]
-    },
-    {
-      "id": 24,
-      "url": "https://picsum.photos/3840/1600",
-      "width": 3840,
-      "height": 1600,
-      "title": "Ultrawide Panorama",
-      "description": "21:9 cinematic ultrawide format",
-      "tags": ["ultrawide", "panorama", "cinematic"]
-    },
-    {
-      "id": 25,
-      "url": "https://picsum.photos/1200/1600",
-      "width": 1200,
-      "height": 1600,
-      "title": "Instagram Portrait",
-      "description": "3:4 ratio optimized for social media",
-      "tags": ["social", "portrait", "instagram"]
-    },
-    {
-      "id": 26,
-      "url": "https://picsum.photos/800/1200",
-      "width": 800,
-      "height": 1200,
-      "title": "Fashion Portrait",
-      "description": "2:3 ratio for fashion photography",
-      "tags": ["fashion", "portrait", "vertical"]
-    },
-    {
-      "id": 27,
-      "url": "https://picsum.photos/2160/3840",
-      "width": 2160,
-      "height": 3840,
-      "title": "Mobile Wallpaper",
-      "description": "9:16 vertical 4K phone background",
-      "tags": ["mobile", "wallpaper", "vertical"]
-    },
-    {
-      "id": 28,
-      "url": "https://picsum.photos/1500/500",
-      "width": 1500,
-      "height": 500,
-      "title": "Website Banner",
-      "description": "Wide banner image for headers",
-      "tags": ["banner", "wide", "header"]
-    },
-    {
-      "id": 29,
-      "url": "https://picsum.photos/2000/2000",
-      "width": 2000,
-      "height": 2000,
-      "title": "Product Display",
-      "description": "High-res square for e-commerce",
-      "tags": ["product", "ecommerce", "square"]
-    },
-    {
-      "id": 30,
-      "url": "https://picsum.photos/1024/768",
-      "width": 1024,
-      "height": 768,
-      "title": "Presentation Slide",
-      "description": "Standard presentation dimensions",
-      "tags": ["presentation", "slide", "4:3"]
-    },
-    {
-      "id": 31,
-      "url": "https://picsum.photos/2500/1667",
-      "width": 2500,
-      "height": 1667,
-      "title": "Travel Photography",
-      "description": "3:2 ratio travel landscape",
-      "tags": ["travel", "landscape", "photo"]
-    },
-    {
-      "id": 32,
-      "url": "https://picsum.photos/1800/1200",
-      "width": 1800,
-      "height": 1200,
-      "title": "Magazine Spread",
-      "description": "High-quality print resolution",
-      "tags": ["magazine", "print", "high-res"]
-    },
-    {
-      "id": 33,
-      "url": "https://picsum.photos/1280/800",
-      "width": 1280,
-      "height": 800,
-      "title": "Blog Header",
-      "description": "16:10 ratio for web content",
-      "tags": ["blog", "header", "web"]
-    },
-    {
-      "id": 34,
-      "url": "https://picsum.photos/600/900",
-      "width": 600,
-      "height": 900,
-      "title": "Book Cover",
-      "description": "Standard book cover dimensions",
-      "tags": ["book", "cover", "vertical"]
-    },
-    {
-      "id": 35,
-      "url": "https://picsum.photos/3840/2160/?blur=3",
-      "width": 3840,
-      "height": 2160,
-      "title": "Background Texture",
-      "description": "Blurred 4K background texture",
-      "tags": ["background", "texture", "blurred"]
-    },
-    {
-      "id": 36,
-      "url": "https://picsum.photos/1400/1400",
-      "width": 1400,
-      "height": 1400,
-      "title": "Social Media Post",
-      "description": "Square format for social platforms",
-      "tags": ["social", "square", "post"]
-    },
-    {
-      "id": 37,
-      "url": "https://picsum.photos/3000/1688",
-      "width": 3000,
-      "height": 1688,
-      "title": "Conference Display",
-      "description": "16:9 ratio for event visuals",
-      "tags": ["conference", "display", "wide"]
-    },
-    {
-      "id": 38,
-      "url": "https://picsum.photos/1600/900/?grayscale",
-      "width": 1600,
-      "height": 900,
-      "title": "Minimalist Wallpaper",
-      "description": "HD grayscale desktop background",
-      "tags": ["wallpaper", "grayscale", "minimalist"]
-    },
-    {
-      "id": 39,
-      "url": "https://picsum.photos/2000/3000",
-      "width": 2000,
-      "height": 3000,
-      "title": "Fashion Editorial",
-      "description": "High-end fashion photography",
-      "tags": ["fashion", "editorial", "vertical"]
-    },
-    {
-      "id": 40,
-      "url": "https://picsum.photos/2560/1600",
-      "width": 2560,
-      "height": 1600,
-      "title": "Retina Display",
-      "description": "High-PPI image for Apple devices",
-      "tags": ["retina", "apple", "high-ppi"]
-    },
-    {
-      "id": 41,
-      "url": "https://picsum.photos/1200/628",
-      "width": 1200,
-      "height": 628,
-      "title": "Facebook Cover",
-      "description": "Optimized for social media sharing",
-      "tags": ["facebook", "social", "cover"]
-    },
-    {
-      "id": 42,
-      "url": "https://picsum.photos/800/600",
-      "width": 800,
-      "height": 600,
-      "title": "Old Monitor",
-      "description": "4:3 ratio for legacy displays",
-      "tags": ["retro", "4:3", "monitor"]
-    },
-    {
-      "id": 43,
-      "url": "https://picsum.photos/1080/1350",
-      "width": 1080,
-      "height": 1350,
-      "title": "Instagram Story",
-      "description": "4:5 ratio for Instagram stories",
-      "tags": ["instagram", "story", "social"]
-    },
-    {
-      "id": 44,
-      "url": "https://picsum.photos/3840/2400",
-      "width": 3840,
-      "height": 2400,
-      "title": "Macbook Wallpaper",
-      "description": "16:10 ratio for laptop displays",
-      "tags": ["wallpaper", "laptop", "apple"]
-    },
-    {
-      "id": 45,
-      "url": "https://picsum.photos/600/315",
-      "width": 600,
-      "height": 315,
-      "title": "Website Thumbnail",
-      "description": "Standard thumbnail dimensions",
-      "tags": ["thumbnail", "web", "small"]
-    },
-    {
-      "id": 46,
-      "url": "https://picsum.photos/1920/1200/?grayscale",
-      "width": 1920,
-      "height": 1200,
-      "title": "Professional Portfolio",
-      "description": "16:10 black and white composition",
-      "tags": ["portfolio", "grayscale", "professional"]
-    },
-    {
-      "id": 47,
-      "url": "https://picsum.photos/2500/1406",
-      "width": 2500,
-      "height": 1406,
-      "title": "YouTube Thumbnail",
-      "description": "16:9 ratio for video thumbnails",
-      "tags": ["youtube", "thumbnail", "video"]
-    },
-    {
-      "id": 48,
-      "url": "https://picsum.photos/1500/1000",
-      "width": 1500,
-      "height": 1000,
-      "title": "Brochure Design",
-      "description": "3:2 ratio for print materials",
-      "tags": ["brochure", "print", "design"]
-    },
-    {
-      "id": 49,
-      "url": "https://picsum.photos/1280/1024",
-      "width": 1280,
-      "height": 1024,
-      "title": "Desktop Wallpaper",
-      "description": "5:4 ratio for standard monitors",
-      "tags": ["wallpaper", "desktop", "monitor"]
-    },
-    {
-      "id": 50,
-      "url": "https://picsum.photos/400/600",
-      "width": 400,
-      "height": 600,
-      "title": "Mobile Thumbnail",
-      "description": "2:3 ratio for mobile previews",
-      "tags": ["mobile", "thumbnail", "vertical"]
-    },
-    {
-      "id": 51,
-      "url": "https://picsum.photos/4096/2304",
-      "width": 4096,
-      "height": 2304,
-      "title": "Alpine Meadow",
-      "description": "4K resolution of wildflowers in mountain meadow",
-      "tags": ["4K", "mountains", "summer"]
-    },
-    {
-      "id": 52,
-      "url": "https://picsum.photos/2400/1350",
-      "width": 2400,
-      "height": 1350,
-      "title": "Desert Sunset",
-      "description": "QHD desert landscape with dramatic shadows",
-      "tags": ["desert", "sunset", "QHD"]
-    },
-    {
-      "id": 53,
-      "url": "https://picsum.photos/2880/1800",
-      "width": 2880,
-      "height": 1800,
-      "title": "Retina Display Wallpaper",
-      "description": "16:10 aspect for high-PPI displays",
-      "tags": ["retina", "wallpaper", "apple"]
-    },
-    {
-      "id": 54,
-      "url": "https://picsum.photos/3600/2400",
-      "width": 3600,
-      "height": 2400,
-      "title": "Professional Portrait",
-      "description": "8.6MP 3:2 portrait for commercial use",
-      "tags": ["portrait", "professional", "high-res"]
-    },
-    {
-      "id": 55,
-      "url": "https://picsum.photos/3840/2160/?blur=4",
-      "width": 3840,
-      "height": 2160,
-      "title": "Soft Focus Background",
-      "description": "4K blurred background for UI design",
-      "tags": ["background", "blur", "UI"]
-    },
-    {
-      "id": 56,
-      "url": "https://picsum.photos/2000/1333",
-      "width": 2000,
-      "height": 1333,
-      "title": "Travel Photography",
-      "description": "3:2 aspect travel shot with natural lighting",
-      "tags": ["travel", "adventure", "photo"]
-    },
-    {
-      "id": 57,
-      "url": "https://picsum.photos/7680/4320",
-      "width": 7680,
-      "height": 4320,
-      "title": "8K Panorama",
-      "description": "Ultra-high resolution landscape",
-      "tags": ["8K", "panorama", "wallpaper"]
-    },
-    {
-      "id": 58,
-      "url": "https://picsum.photos/1080/1920/?grayscale",
-      "width": 1080,
-      "height": 1920,
-      "title": "Mobile Wallpaper",
-      "description": "Vertical monochrome for smartphones",
-      "tags": ["mobile", "grayscale", "wallpaper"]
-    },
-    {
-      "id": 59,
-      "url": "https://picsum.photos/2500/2500",
-      "width": 2500,
-      "height": 2500,
-      "title": "E-commerce Product",
-      "description": "High-res square product image",
-      "tags": ["ecommerce", "product", "square"]
-    },
-    {
-      "id": 60,
-      "url": "https://picsum.photos/3200/1800",
-      "width": 3200,
-      "height": 1800,
-      "title": "QHD+ Landscape",
-      "description": "Widescreen nature composition",
-      "tags": ["landscape", "QHD", "widescreen"]
-    },
-    {
-      "id": 61,
-      "url": "https://picsum.photos/1440/2560",
-      "width": 1440,
-      "height": 2560,
-      "title": "QHD Mobile",
-      "description": "Tall smartphone-optimized image",
-      "tags": ["mobile", "QHD", "vertical"]
-    },
-    {
-      "id": 62,
-      "url": "https://picsum.photos/4000/2667",
-      "width": 4000,
-      "height": 2667,
-      "title": "DSLR Quality",
-      "description": "10.6MP 3:2 professional photo",
-      "tags": ["DSLR", "professional", "high-res"]
-    },
-    {
-      "id": 63,
-      "url": "https://picsum.photos/1800/2700",
-      "width": 1800,
-      "height": 2700,
-      "title": "Fashion Editorial",
-      "description": "2:3 vertical for magazine spreads",
-      "tags": ["fashion", "editorial", "portrait"]
-    },
-    {
-      "id": 64,
-      "url": "https://picsum.photos/2560/1440/?grayscale",
-      "width": 2560,
-      "height": 1440,
-      "title": "Minimalist Desktop",
-      "description": "QHD black and white wallpaper",
-      "tags": ["minimalist", "grayscale", "wallpaper"]
-    },
-    {
-      "id": 65,
-      "url": "https://picsum.photos/3000/2000",
-      "width": 3000,
-      "height": 2000,
-      "title": "Stock Photo",
-      "description": "6MP professional stock image",
-      "tags": ["stock", "professional", "commercial"]
-    },
-    {
-      "id": 66,
-      "url": "https://picsum.photos/1600/2560",
-      "width": 1600,
-      "height": 2560,
-      "title": "Tall Portrait",
-      "description": "5:8 aspect vertical composition",
-      "tags": ["portrait", "vertical", "artistic"]
-    },
-    {
-      "id": 67,
-      "url": "https://picsum.photos/3840/1600",
-      "width": 3840,
-      "height": 1600,
-      "title": "Ultrawide Banner",
-      "description": "21:9 cinematic aspect ratio",
-      "tags": ["ultrawide", "banner", "cinematic"]
-    },
-    {
-      "id": 68,
-      "url": "https://picsum.photos/1200/1800/?blur=2",
-      "width": 1200,
-      "height": 1800,
-      "title": "Artistic Blur",
-      "description": "Soft focus vertical image",
-      "tags": ["artistic", "blur", "portrait"]
-    },
-    {
-      "id": 69,
-      "url": "https://picsum.photos/5000/3333",
-      "width": 5000,
-      "height": 3333,
-      "title": "Ultra High-Res",
-      "description": "16.6MP professional photograph",
-      "tags": ["professional", "ultraHD", "high-res"]
-    },
-    {
-      "id": 70,
-      "url": "https://picsum.photos/900/1600",
-      "width": 900,
-      "height": 1600,
-      "title": "Mobile Story",
-      "description": "9:16 vertical for social media",
-      "tags": ["social", "mobile", "story"]
-    },
-    {
-      "id": 71,
-      "url": "https://picsum.photos/2400/1600",
-      "width": 2400,
-      "height": 1600,
-      "title": "Print Layout",
-      "description": "3:2 ratio for magazine printing",
-      "tags": ["print", "magazine", "layout"]
-    },
-    {
-      "id": 72,
       "url": "https://picsum.photos/1920/1280",
       "width": 1920,
       "height": 1280,
-      "title": "Blog Feature",
-      "description": "3:2 aspect featured image",
-      "tags": ["blog", "feature", "web"]
+      "title": "Market Day",
+      "description": "Street vendor portrait",
+      "likes": 231,
+      "category": "Street Photography",
+      "tags": ["market", "culture", "people"]
     },
     {
-      "id": 73,
-      "url": "https://picsum.photos/2160/3840",
-      "width": 2160,
-      "height": 3840,
-      "title": "4K Mobile Wallpaper",
-      "description": "Ultra-high-res vertical image",
-      "tags": ["4K", "mobile", "wallpaper"]
-    },
-    {
-      "id": 74,
-      "url": "https://picsum.photos/3000/3000",
-      "width": 3000,
-      "height": 3000,
-      "title": "Square Product",
-      "description": "9MP square product shot",
-      "tags": ["product", "square", "ecommerce"]
-    },
-    {
-      "id": 75,
-      "url": "https://picsum.photos/1600/900/?grayscale",
-      "width": 1600,
-      "height": 900,
-      "title": "Presentation Background",
-      "description": "HD grayscale slide background",
-      "tags": ["presentation", "grayscale", "background"]
-    },
-    {
-      "id": 76,
-      "url": "https://picsum.photos/2800/1867",
-      "width": 2800,
-      "height": 1867,
-      "title": "Travel Magazine",
-      "description": "3:2 travel feature image",
-      "tags": ["travel", "magazine", "photo"]
-    },
-    {
-      "id": 77,
-      "url": "https://picsum.photos/1200/800",
-      "width": 1200,
-      "height": 800,
-      "title": "Website Hero",
-      "description": "Wide hero image for websites",
-      "tags": ["web", "hero", "header"]
-    },
-    {
-      "id": 78,
-      "url": "https://picsum.photos/3840/2400",
-      "width": 3840,
-      "height": 2400,
-      "title": "Macbook Pro Wallpaper",
-      "description": "16:10 4K laptop background",
-      "tags": ["wallpaper", "apple", "4K"]
-    },
-    {
-      "id": 79,
-      "url": "https://picsum.photos/1500/1000",
-      "width": 1500,
-      "height": 1000,
-      "title": "Brochure Design",
-      "description": "3:2 print marketing material",
-      "tags": ["print", "brochure", "marketing"]
-    },
-    {
-      "id": 80,
-      "url": "https://picsum.photos/2560/1600",
-      "width": 2560,
-      "height": 1600,
-      "title": "Widescreen Display",
-      "description": "16:10 QHD+ computer wallpaper",
-      "tags": ["wallpaper", "widescreen", "QHD"]
-    },
-    {
-      "id": 81,
-      "url": "https://picsum.photos/4000/3000",
+      "id": 17,
+      "url": "https://picsum.photos/4000/2667",
       "width": 4000,
-      "height": 3000,
-      "title": "DSLR 4:3",
-      "description": "12MP 4:3 professional photo",
-      "tags": ["DSLR", "4:3", "professional"]
+      "height": 2667,
+      "title": "Glass Skyscraper",
+      "description": "Modern urban architecture",
+      "likes": 176,
+      "category": "Architecture",
+      "tags": ["skyscraper", "reflection", "urban"]
     },
     {
-      "id": 82,
-      "url": "https://picsum.photos/1800/1200",
+      "id": 18,
+      "url": "https://picsum.photos/1800/2400",
       "width": 1800,
-      "height": 1200,
-      "title": "Blog Post",
-      "description": "Featured image for articles",
-      "tags": ["blog", "article", "feature"]
+      "height": 2400,
+      "title": "Artist Portrait",
+      "description": "Creative professional portrait",
+      "likes": 154,
+      "category": "Portrait",
+      "tags": ["creative", "artist", "studio"]
     },
     {
-      "id": 83,
-      "url": "https://picsum.photos/1080/1920/?blur=3",
-      "width": 1080,
-      "height": 1920,
-      "title": "Soft Mobile Background",
-      "description": "Blurred vertical background",
-      "tags": ["mobile", "background", "blur"]
+      "id": 19,
+      "url": "https://picsum.photos/4096/2304",
+      "width": 4096,
+      "height": 2304,
+      "title": "Waterfall Mist",
+      "description": "4K cascading waterfall",
+      "likes": 267,
+      "category": "Nature",
+      "tags": ["water", "forest", "mist"]
     },
     {
-      "id": 84,
-      "url": "https://picsum.photos/3000/2000/?grayscale",
+      "id": 20,
+      "url": "https://picsum.photos/3000/2000",
       "width": 3000,
       "height": 2000,
-      "title": "Monochrome Print",
-      "description": "6MP black and white for printing",
-      "tags": ["grayscale", "print", "monochrome"]
+      "title": "Concert Crowd",
+      "description": "Music festival energy",
+      "likes": 432,
+      "category": "Events",
+      "tags": ["music", "festival", "crowd"]
     },
     {
-      "id": 85,
-      "url": "https://picsum.photos/1600/1067",
-      "width": 1600,
-      "height": 1067,
-      "title": "Web Banner",
-      "description": "3:2 website banner image",
-      "tags": ["web", "banner", "header"]
-    },
-    {
-      "id": 86,
-      "url": "https://picsum.photos/2048/1536",
-      "width": 2048,
-      "height": 1536,
-      "title": "iPad Wallpaper",
-      "description": "4:3 tablet background",
-      "tags": ["iPad", "tablet", "wallpaper"]
-    },
-    {
-      "id": 87,
-      "url": "https://picsum.photos/2500/1667",
-      "width": 2500,
-      "height": 1667,
-      "title": "Stock Photography",
-      "description": "4MP stock image 3:2 ratio",
-      "tags": ["stock", "photo", "commercial"]
-    },
-    {
-      "id": 88,
-      "url": "https://picsum.photos/1200/1200",
-      "width": 1200,
-      "height": 1200,
-      "title": "Social Media Post",
-      "description": "Square format for Instagram",
-      "tags": ["social", "instagram", "square"]
-    },
-    {
-      "id": 89,
-      "url": "https://picsum.photos/2880/1800/?grayscale",
-      "width": 2880,
-      "height": 1800,
-      "title": "Minimalist Desktop",
-      "description": "Black and white Retina wallpaper",
-      "tags": ["minimalist", "grayscale", "retina"]
-    },
-    {
-      "id": 90,
-      "url": "https://picsum.photos/1500/2100",
-      "width": 1500,
-      "height": 2100,
-      "title": "Book Page",
-      "description": "5:7 aspect for print layouts",
-      "tags": ["book", "print", "layout"]
-    },
-    {
-      "id": 91,
-      "url": "https://picsum.photos/3200/1800",
-      "width": 3200,
-      "height": 1800,
-      "title": "QHD+ Background",
-      "description": "Widescreen high-res background",
-      "tags": ["QHD", "background", "widescreen"]
-    },
-    {
-      "id": 92,
+      "id": 21,
       "url": "https://picsum.photos/2000/3000",
       "width": 2000,
       "height": 3000,
-      "title": "Portrait Session",
-      "description": "2:3 professional portrait",
-      "tags": ["portrait", "professional", "photography"]
+      "title": "Cocktail Craft",
+      "description": "Mixologist creating signature drink",
+      "likes": 198,
+      "category": "Food Photography",
+      "tags": ["bartender", "craft", "beverage"]
     },
     {
-      "id": 93,
-      "url": "https://picsum.photos/3840/2160/?blur=5",
+      "id": 22,
+      "url": "https://picsum.photos/2400/3600",
+      "width": 2400,
+      "height": 3600,
+      "title": "Luxury Watch",
+      "description": "High-end fashion accessory",
+      "likes": 287,
+      "category": "Fashion",
+      "tags": ["luxury", "accessories", "detail"]
+    },
+    {
+      "id": 23,
+      "url": "https://picsum.photos/3840/2160",
       "width": 3840,
       "height": 2160,
-      "title": "UI Background",
-      "description": "4K blurred interface background",
-      "tags": ["UI", "background", "blur"]
+      "title": "Alpine Village",
+      "description": "4K mountain townscape",
+      "likes": 321,
+      "category": "Travel",
+      "tags": ["alps", "village", "winter"]
     },
     {
-      "id": 94,
-      "url": "https://picsum.photos/1200/800/?grayscale",
-      "width": 1200,
-      "height": 800,
-      "title": "Minimalist Web",
-      "description": "3:2 black and white for web",
-      "tags": ["minimalist", "grayscale", "web"]
+      "id": 24,
+      "url": "https://picsum.photos/3000/2000?grayscale",
+      "width": 3000,
+      "height": 2000,
+      "title": "Leopard Closeup",
+      "description": "Monochrome wildlife portrait",
+      "likes": 356,
+      "category": "Black & White",
+      "tags": ["big-cat", "wild", "texture"]
     },
     {
-      "id": 95,
+      "id": 25,
       "url": "https://picsum.photos/2500/2500",
       "width": 2500,
       "height": 2500,
-      "title": "Product Catalog",
-      "description": "Square high-res product image",
-      "tags": ["product", "catalog", "ecommerce"]
+      "title": "Fluid Dynamics",
+      "description": "Abstract liquid motion",
+      "likes": 213,
+      "category": "Abstract",
+      "tags": ["motion", "colors", "experimental"]
     },
     {
-      "id": 96,
-      "url": "https://picsum.photos/1600/900",
-      "width": 1600,
-      "height": 900,
-      "title": "YouTube Background",
-      "description": "HD channel art background",
-      "tags": ["youtube", "background", "HD"]
+      "id": 26,
+      "url": "https://picsum.photos/1920/1280",
+      "width": 1920,
+      "height": 1280,
+      "title": "Subway Moment",
+      "description": "Urban commuter scene",
+      "likes": 245,
+      "category": "Street Photography",
+      "tags": ["transport", "urban", "candid"]
     },
     {
-      "id": 97,
-      "url": "https://picsum.photos/1800/2700",
+      "id": 27,
+      "url": "https://picsum.photos/4000/2667",
+      "width": 4000,
+      "height": 2667,
+      "title": "Bridge Architecture",
+      "description": "Modern suspension bridge",
+      "likes": 189,
+      "category": "Architecture",
+      "tags": ["bridge", "engineering", "modern"]
+    },
+    {
+      "id": 28,
+      "url": "https://picsum.photos/1800/2400",
       "width": 1800,
-      "height": 2700,
-      "title": "Fashion Layout",
-      "description": "2:3 vertical fashion image",
-      "tags": ["fashion", "layout", "magazine"]
+      "height": 2400,
+      "title": "Dancer Portrait",
+      "description": "Performer in motion",
+      "likes": 267,
+      "category": "Portrait",
+      "tags": ["performance", "arts", "movement"]
     },
     {
-      "id": 98,
+      "id": 29,
+      "url": "https://picsum.photos/4096/2304",
+      "width": 4096,
+      "height": 2304,
+      "title": "Volcano Landscape",
+      "description": "4K active volcano",
+      "likes": 298,
+      "category": "Nature",
+      "tags": ["volcano", "lava", "geology"]
+    },
+    {
+      "id": 30,
       "url": "https://picsum.photos/3000/2000",
       "width": 3000,
       "height": 2000,
-      "title": "Print Advertisement",
-      "description": "High-res 3:2 ad layout",
-      "tags": ["print", "advertisement", "marketing"]
+      "title": "Corporate Event",
+      "description": "Professional networking",
+      "likes": 156,
+      "category": "Events",
+      "tags": ["business", "networking", "professional"]
     },
     {
-      "id": 99,
-      "url": "https://picsum.photos/1200/1800",
-      "width": 1200,
-      "height": 1800,
-      "title": "Mobile Portrait",
-      "description": "2:3 vertical mobile optimized",
-      "tags": ["mobile", "portrait", "vertical"]
-    },
-    {
-      "id": 100,
-      "url": "https://picsum.photos/3840/1600",
-      "width": 3840,
-      "height": 1600,
-      "title": "Ultrawide Display",
-      "description": "21:9 cinematic wallpaper",
-      "tags": ["ultrawide", "cinematic", "wallpaper"]
-    },
-    {
-      "id": 101,
-      "url": "https://picsum.photos/2000/2000",
+      "id": 31,
+      "url": "https://picsum.photos/2000/3000",
       "width": 2000,
-      "height": 2000,
-      "title": "Social Media Avatar",
-      "description": "High-res profile image",
-      "tags": ["social", "avatar", "profile"]
+      "height": 3000,
+      "title": "Pastry Chef",
+      "description": "Artisan dessert creation",
+      "likes": 324,
+      "category": "Food Photography",
+      "tags": ["dessert", "bakery", "artisan"]
     },
     {
-      "id": 102,
-      "url": "https://picsum.photos/1600/1200",
-      "width": 1600,
-      "height": 1200,
-      "title": "Blog Header",
-      "description": "4:3 featured blog image",
-      "tags": ["blog", "header", "feature"]
-    },
-    {
-      "id": 103,
-      "url": "https://picsum.photos/2500/1406",
-      "width": 2500,
-      "height": 1406,
-      "title": "Video Thumbnail",
-      "description": "16:9 YouTube thumbnail",
-      "tags": ["youtube", "thumbnail", "video"]
-    },
-    {
-      "id": 104,
-      "url": "https://picsum.photos/1200/628",
-      "width": 1200,
-      "height": 628,
-      "title": "Facebook Cover",
-      "description": "Optimized social media image",
-      "tags": ["facebook", "social", "cover"]
-    },
-    {
-      "id": 105,
-      "url": "https://picsum.photos/3000/1688",
-      "width": 3000,
-      "height": 1688,
-      "title": "Conference Slide",
-      "description": "16:9 presentation image",
-      "tags": ["presentation", "slide", "conference"]
-    },
-    {
-      "id": 106,
-      "url": "https://picsum.photos/1080/1350",
-      "width": 1080,
-      "height": 1350,
-      "title": "Instagram Post",
-      "description": "4:5 social media optimized",
-      "tags": ["instagram", "social", "post"]
-    },
-    {
-      "id": 107,
-      "url": "https://picsum.photos/2400/1600",
+      "id": 32,
+      "url": "https://picsum.photos/2400/3600",
       "width": 2400,
-      "height": 1600,
-      "title": "Magazine Spread",
-      "description": "3:2 print layout image",
-      "tags": ["magazine", "print", "layout"]
+      "height": 3600,
+      "title": "Haute Couture",
+      "description": "High-fashion editorial",
+      "likes": 412,
+      "category": "Fashion",
+      "tags": ["editorial", "couture", "luxury"]
     },
     {
-      "id": 108,
+      "id": 33,
       "url": "https://picsum.photos/3840/2160",
       "width": 3840,
       "height": 2160,
-      "title": "4K Background",
-      "description": "Ultra HD desktop wallpaper",
-      "tags": ["4K", "wallpaper", "ultraHD"]
+      "title": "Tropical Beach",
+      "description": "4K paradise island",
+      "likes": 498,
+      "category": "Travel",
+      "tags": ["beach", "tropical", "vacation"]
     },
     {
-      "id": 109,
-      "url": "https://picsum.photos/1500/500",
-      "width": 1500,
-      "height": 500,
-      "title": "Website Banner",
-      "description": "Wide header banner image",
-      "tags": ["web", "banner", "header"]
-    },
-    {
-      "id": 110,
-      "url": "https://picsum.photos/2000/3000",
-      "width": 2000,
-      "height": 3000,
-      "title": "Portrait Photography",
-      "description": "Professional 2:3 portrait",
-      "tags": ["portrait", "photography", "professional"]
-    },
-    {
-      "id": 111,
-      "url": "https://picsum.photos/2560/1440",
-      "width": 2560,
-      "height": 1440,
-      "title": "QHD Wallpaper",
-      "description": "Widescreen computer background",
-      "tags": ["QHD", "wallpaper", "widescreen"]
-    },
-    {
-      "id": 112,
-      "url": "https://picsum.photos/1200/800",
-      "width": 1200,
-      "height": 800,
-      "title": "Blog Feature",
-      "description": "3:2 featured article image",
-      "tags": ["blog", "feature", "article"]
-    },
-    {
-      "id": 113,
-      "url": "https://picsum.photos/1800/1200",
-      "width": 1800,
-      "height": 1200,
-      "title": "Print Ad",
-      "description": "3:2 advertisement layout",
-      "tags": ["print", "advertisement", "marketing"]
-    },
-    {
-      "id": 114,
-      "url": "https://picsum.photos/1080/1920",
-      "width": 1080,
-      "height": 1920,
-      "title": "Smartphone Wallpaper",
-      "description": "Vertical mobile background",
-      "tags": ["mobile", "wallpaper", "vertical"]
-    },
-    {
-      "id": 115,
-      "url": "https://picsum.photos/3000/2000",
+      "id": 34,
+      "url": "https://picsum.photos/3000/2000?grayscale",
       "width": 3000,
       "height": 2000,
-      "title": "Stock Photo",
-      "description": "6MP professional stock image",
-      "tags": ["stock", "professional", "photo"]
+      "title": "Urban Decay",
+      "description": "Monochrome city textures",
+      "likes": 287,
+      "category": "Black & White",
+      "tags": ["urban", "texture", "contrast"]
     },
     {
-      "id": 116,
-      "url": "https://picsum.photos/1600/900",
-      "width": 1600,
-      "height": 900,
-      "title": "HD Background",
-      "description": "Widescreen HD wallpaper",
-      "tags": ["HD", "wallpaper", "widescreen"]
-    },
-    {
-      "id": 117,
-      "url": "https://picsum.photos/1200/1200",
-      "width": 1200,
-      "height": 1200,
-      "title": "Social Media",
-      "description": "Square format for Instagram",
-      "tags": ["social", "instagram", "square"]
-    },
-    {
-      "id": 118,
-      "url": "https://picsum.photos/2500/1667",
+      "id": 35,
+      "url": "https://picsum.photos/2500/2500",
       "width": 2500,
-      "height": 1667,
-      "title": "Travel Photo",
-      "description": "3:2 travel landscape",
-      "tags": ["travel", "landscape", "photo"]
+      "height": 2500,
+      "title": "Geometric Patterns",
+      "description": "Abstract shapes and forms",
+      "likes": 231,
+      "category": "Abstract",
+      "tags": ["geometry", "patterns", "minimal"]
     },
     {
-      "id": 119,
-      "url": "https://picsum.photos/3840/2400",
-      "width": 3840,
+      "id": 36,
+      "url": "https://picsum.photos/1920/1280",
+      "width": 1920,
+      "height": 1280,
+      "title": "City Cyclist",
+      "description": "Urban transportation",
+      "likes": 198,
+      "category": "Street Photography",
+      "tags": ["bike", "urban", "transport"]
+    },
+    {
+      "id": 37,
+      "url": "https://picsum.photos/4000/2667",
+      "width": 4000,
+      "height": 2667,
+      "title": "Cathedral Interior",
+      "description": "Historic architecture",
+      "likes": 321,
+      "category": "Architecture",
+      "tags": ["historic", "church", "interior"]
+    },
+    {
+      "id": 38,
+      "url": "https://picsum.photos/1800/2400",
+      "width": 1800,
       "height": 2400,
-      "title": "Macbook Wallpaper",
-      "description": "16:10 laptop background",
-      "tags": ["wallpaper", "laptop", "apple"]
+      "title": "Musician Portrait",
+      "description": "Artist with instrument",
+      "likes": 276,
+      "category": "Portrait",
+      "tags": ["music", "artist", "creative"]
     },
     {
-      "id": 120,
-      "url": "https://picsum.photos/1500/1000",
-      "width": 1500,
-      "height": 1000,
-      "title": "Print Layout",
-      "description": "3:2 brochure design",
-      "tags": ["print", "layout", "brochure"]
+      "id": 39,
+      "url": "https://picsum.photos/4096/2304",
+      "width": 4096,
+      "height": 2304,
+      "title": "Aurora Borealis",
+      "description": "4K northern lights",
+      "likes": 543,
+      "category": "Nature",
+      "tags": ["aurora", "night", "sky"]
     },
     {
-      "id": 121,
-      "url": "https://picsum.photos/2000/1333",
-      "width": 2000,
-      "height": 1333,
-      "title": "Website Feature",
-      "description": "3:2 web article image",
-      "tags": ["web", "feature", "article"]
-    },
-    {
-      "id": 122,
-      "url": "https://picsum.photos/1080/1350",
-      "width": 1080,
-      "height": 1350,
-      "title": "Instagram Story",
-      "description": "4:5 social media story",
-      "tags": ["instagram", "story", "social"]
-    },
-    {
-      "id": 123,
-      "url": "https://picsum.photos/2560/1600",
-      "width": 2560,
-      "height": 1600,
-      "title": "Retina Display",
-      "description": "High-PPI 16:10 image",
-      "tags": ["retina", "apple", "high-ppi"]
-    },
-    {
-      "id": 124,
-      "url": "https://picsum.photos/1200/628",
-      "width": 1200,
-      "height": 628,
-      "title": "Facebook Ad",
-      "description": "Optimized social media ad",
-      "tags": ["facebook", "ad", "social"]
-    },
-    {
-      "id": 125,
+      "id": 40,
       "url": "https://picsum.photos/3000/2000",
       "width": 3000,
       "height": 2000,
-      "title": "Print Quality",
-      "description": "6MP high-res for printing",
-      "tags": ["print", "high-res", "quality"]
-    },
-    {
-      "id": 126,
-      "url": "https://picsum.photos/1800/2700",
-      "width": 1800,
-      "height": 2700,
-      "title": "Fashion Portrait",
-      "description": "2:3 vertical fashion image",
-      "tags": ["fashion", "portrait", "vertical"]
-    },
-    {
-      "id": 127,
-      "url": "https://picsum.photos/3840/2160",
-      "width": 3840,
-      "height": 2160,
-      "title": "4K Wallpaper",
-      "description": "Ultra HD desktop background",
-      "tags": ["4K", "wallpaper", "ultraHD"]
-    },
-    {
-      "id": 128,
-      "url": "https://picsum.photos/1500/500",
-      "width": 1500,
-      "height": 500,
-      "title": "Web Banner",
-      "description": "Wide header banner",
-      "tags": ["web", "banner", "header"]
-    },
-    {
-      "id": 129,
-      "url": "https://picsum.photos/2000/3000",
-      "width": 2000,
-      "height": 3000,
-      "title": "Tall Portrait",
-      "description": "2:3 professional portrait",
-      "tags": ["portrait", "professional", "vertical"]
-    },
-    {
-      "id": 130,
-      "url": "https://picsum.photos/2560/1440",
-      "width": 2560,
-      "height": 1440,
-      "title": "QHD Background",
-      "description": "Widescreen computer wallpaper",
-      "tags": ["QHD", "wallpaper", "widescreen"]
-    },
-    {
-      "id": 131,
-      "url": "https://picsum.photos/1200/800",
-      "width": 1200,
-      "height": 800,
-      "title": "Blog Header",
-      "description": "3:2 featured blog image",
-      "tags": ["blog", "header", "feature"]
-    },
-    {
-      "id": 132,
-      "url": "https://picsum.photos/1800/1200",
-      "width": 1800,
-      "height": 1200,
-      "title": "Print Ad",
-      "description": "3:2 advertisement layout",
-      "tags": ["print", "advertisement", "marketing"]
-    },
-    {
-      "id": 133,
-      "url": "https://picsum.photos/1080/1920",
-      "width": 1080,
-      "height": 1920,
-      "title": "Mobile Wallpaper",
-      "description": "Vertical smartphone background",
-      "tags": ["mobile", "wallpaper", "vertical"]
-    },
-    {
-      "id": 134,
-      "url": "https://picsum.photos/3000/2000",
-      "width": 3000,
-      "height": 2000,
-      "title": "Stock Photo",
-      "description": "6MP professional stock image",
-      "tags": ["stock", "professional", "photo"]
-    },
-    {
-      "id": 135,
-      "url": "https://picsum.photos/1600/900",
-      "width": 1600,
-      "height": 900,
-      "title": "HD Background",
-      "description": "Widescreen HD wallpaper",
-      "tags": ["HD", "wallpaper", "widescreen"]
-    },
-    {
-      "id": 136,
-      "url": "https://picsum.photos/1200/1200",
-      "width": 1200,
-      "height": 1200,
-      "title": "Social Media",
-      "description": "Square format for Instagram",
-      "tags": ["social", "instagram", "square"]
-    },
-    {
-      "id": 137,
-      "url": "https://picsum.photos/2500/1667",
-      "width": 2500,
-      "height": 1667,
-      "title": "Travel Photo",
-      "description": "3:2 travel landscape",
-      "tags": ["travel", "landscape", "photo"]
-    },
-    {
-      "id": 138,
-      "url": "https://picsum.photos/3840/2400",
-      "width": 3840,
-      "height": 2400,
-      "title": "Macbook Wallpaper",
-      "description": "16:10 laptop background",
-      "tags": ["wallpaper", "laptop", "apple"]
-    },
-    {
-      "id": 139,
-      "url": "https://picsum.photos/1500/1000",
-      "width": 1500,
-      "height": 1000,
-      "title": "Print Layout",
-      "description": "3:2 brochure design",
-      "tags": ["print", "layout", "brochure"]
-    },
-    {
-      "id": 140,
-      "url": "https://picsum.photos/2000/1333",
-      "width": 2000,
-      "height": 1333,
-      "title": "Website Feature",
-      "description": "3:2 web article image",
-      "tags": ["web", "feature", "article"]
-    },
-    {
-      "id": 141,
-      "url": "https://picsum.photos/1080/1350",
-      "width": 1080,
-      "height": 1350,
-      "title": "Instagram Story",
-      "description": "4:5 social media story",
-      "tags": ["instagram", "story", "social"]
-    },
-    {
-      "id": 142,
-      "url": "https://picsum.photos/2560/1600",
-      "width": 2560,
-      "height": 1600,
-      "title": "Retina Display",
-      "description": "High-PPI 16:10 image",
-      "tags": ["retina", "apple", "high-ppi"]
-    },
-    {
-      "id": 143,
-      "url": "https://picsum.photos/1200/628",
-      "width": 1200,
-      "height": 628,
-      "title": "Facebook Ad",
-      "description": "Optimized social media ad",
-      "tags": ["facebook", "ad", "social"]
-    },
-    {
-      "id": 144,
-      "url": "https://picsum.photos/3000/2000",
-      "width": 3000,
-      "height": 2000,
-      "title": "Print Quality",
-      "description": "6MP high-res for printing",
-      "tags": ["print", "high-res", "quality"]
-    },
-    {
-      "id": 145,
-      "url": "https://picsum.photos/1800/2700",
-      "width": 1800,
-      "height": 2700,
-      "title": "Fashion Portrait",
-      "description": "2:3 vertical fashion image",
-      "tags": ["fashion", "portrait", "vertical"]
-    },
-    {
-      "id": 146,
-      "url": "https://picsum.photos/3840/2160",
-      "width": 3840,
-      "height": 2160,
-      "title": "4K Wallpaper",
-      "description": "Ultra HD desktop background",
-      "tags": ["4K", "wallpaper", "ultraHD"]
-    },
-    {
-      "id": 147,
-      "url": "https://picsum.photos/1500/500",
-      "width": 1500,
-      "height": 500,
-      "title": "Web Banner",
-      "description": "Wide header banner",
-      "tags": ["web", "banner", "header"]
-    },
-    {
-      "id": 148,
-      "url": "https://picsum.photos/2000/3000",
-      "width": 2000,
-      "height": 3000,
-      "title": "Tall Portrait",
-      "description": "2:3 professional portrait",
-      "tags": ["portrait", "professional", "vertical"]
-    },
-    {
-      "id": 149,
-      "url": "https://picsum.photos/2560/1440",
-      "width": 2560,
-      "height": 1440,
-      "title": "QHD Background",
-      "description": "Widescreen computer wallpaper",
-      "tags": ["QHD", "wallpaper", "widescreen"]
+      "title": "Product Launch",
+      "description": "Tech event showcase",
+      "likes": 287,
+      "category": "Events",
+      "tags": ["tech", "product", "innovation"]
     },
     {
       "id": 150,
-      "url": "https://picsum.photos/1200/800",
-      "width": 1200,
-      "height": 800,
-      "title": "Blog Header",
-      "description": "3:2 featured blog image",
-      "tags": ["blog", "header", "feature"]
+      "url": "https://picsum.photos/3840/2160",
+      "width": 3840,
+      "height": 2160,
+      "title": "Coastal Sunset",
+      "description": "4K ocean horizon at dusk",
+      "likes": 412,
+      "category": "Landscape",
+      "tags": ["ocean", "sunset", "golden-hour"]
     }
   ]
 }
