@@ -9,16 +9,20 @@ const GalleryApp = () => {
 
   const fetchImages = () => {
     setIsLoading(true);
-    fetch(`http://localhost:3000/images`)
-      .then(res => res.json())
-      .then(data => {
-        setImages(prev => [...prev, ...data]);
-        setIsLoading(false);
-      })
-      .catch(err => {
-        console.error('Error fetching images:', err);
-        setIsLoading(false);
-      });
+    axios.get(`http://localhost:3000/images`, {
+      params: {
+        _page: page,
+        _limit: 2  // or any number you want to load per scroll
+      }
+    })
+    .then((response) => {
+      setImages(prev => [...prev, ...response.data]);
+      setIsLoading(false);
+    })
+    .catch((err) => {
+      console.error('Error fetching images:', err);
+      setIsLoading(false);
+    });
   };
 
   const handleLike = (image) => {
