@@ -51,7 +51,7 @@
   
   
   .about-card h3 {
-    color: #88c603;
+    color:#D4AF37;
     margin-top: 0;
     font-size: 1.8rem;
   }
@@ -86,7 +86,11 @@
     min-width: 250px;
 }
 .navbar-about{
-  background-color:#3E2614;
+  background-color:black;
+}
+
+.footer-content{
+  text-align: center;
 }
 
 

@@ -6,7 +6,7 @@ function About() {
     return (
         <div className="about-layout">
             <div className="navbar-about">
-            <Navbar />
+                <Navbar />
             </div>
             <main className="about-content">
                 <section className="about-section">
@@ -16,37 +16,36 @@ function About() {
                     
                     <div className="about-container">
                         <div className="about-card"> 
-                            <h3>View and Like Your Favorite Photos!</h3>
+                            <h3>Who we are</h3>
                             <p>
-                                Browse endlessly on MyPhotoGallery, viewing and liking handpicked 
-                                and curated images from emerging photographers around the world 
-                                in collaboration with Unsplash API.
+                            PhoGalleria was founded in 2020 with one goal: to celebrate and share beautiful moments captured through the lenses of photographers from all over the world. We are a global community of photography lovers—creators, curators, and storytellers—brought together by a shared passion for visual storytelling. From breathtaking landscapes to intimate portraits, we showcase images that spark emotion, preserve memories, and reflect the diversity of human experience.
+                            </p>
+                        </div>
+
+                        <div className="about-card">
+                            <h3>Our mission</h3>
+                            <p>
+                            At PhoGalleria, we believe that every photograph tells a unique story. Our mission is to bring these stories to the forefront, connecting people through the universal language of imagery. We are passionate about showcasing the diverse perspectives and creative talents of photographers from all corners of the globe, while inspiring others to capture and appreciate the beauty in the world around us. 
                             </p>
                         </div>
                 
+                
                         <div className="about-card">
-                            <h3>Our Features</h3>
+                            <h3>What We Offer</h3>
                             <ul>
-                                <li><strong>Endless Scrolling</strong> - Never run out of images with our infinite scroll</li>
-                                <li><strong>Favorites</strong> - Save images with a simple heart click</li>
-                                <li><strong>Responsive Layout</strong> - Adapts perfectly to any device</li>
-                                <li><strong>Image Search</strong> - Find specific images quickly</li>
+                                <li><strong>Global Showcase</strong> – Featuring photographers who've journeyed across continents</li>
+                                <li><strong>Favorites</strong> – Like and save your favorite shots with a simple tap</li>
+                                <li><strong>Smart Search</strong> – Discover specific themes or places instantly</li>
+                                <li><strong>Endless Browsing</strong> – Keep scrolling and discovering with our infinite gallery</li>
+                                <li><strong>Responsive Design</strong> – Works beautifully on all devices</li>
                             </ul>
                         </div>
                 
+                      
                         <div className="about-card">
-                            <h3>Fast and Efficient</h3>
+                            <h3>Meet the Creators</h3>
                             <p>
-                                Built with React and Vite for blazing fast performance, 
-                                smooth browsing, and a clean modern interface.
-                            </p>
-                        </div>
-                
-                        <div className="about-card">
-                            <h3>Creators</h3>
-                            <p>
-                                All rights reserved to Presbury Wamae, Rochelle Awour, 
-                                and Neville Ng'ang'a.
+                                PhoGalleria is proudly crafted by Presbury Wamae, Rochelle Awuor, and Neville Ng'ang'a — a passionate trio of developers and design lovers who believe in the power of photography to tell stories, inspire creativity, and connect people across borders.
                             </p>
                         </div>
                     </div>
@@ -54,7 +53,7 @@ function About() {
                 
                 <footer className="about-footer">
                     <div className="footer-content">
-                        <h5>MyPhotoGallery</h5>
+                        <h5>PhoGalleria</h5>
                         <p>© {new Date().getFullYear()} All Rights Reserved</p>
                         <p>Created with ❤️ by Presbury, Rochelle, and Neville</p>
                     </div>
