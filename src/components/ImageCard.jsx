@@ -1,24 +1,31 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
-const ImageCard = ({ image, onLike }) => {
-  const [liked, setLiked] = useState(false);
+const ImageCard = ({ image }) => {
+  const [likes, setLikes] = useState(image.likes || 0);
 
   const handleLike = () => {
-    setLiked(!liked);
-    onLike(image);
+    const updatedLikes = likes + 1;
+    setLikes(updatedLikes);
+
+    fetch(`http://localhost:3000/images/${image.id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ likes: updatedLikes }),
+    })
+    .catch((error) => console.error('Error updating likes:', error));
   };
 
   return (
-    <>
     <div className="image-card">
-        <img src={image.url} alt={image.title || "Gallery Image"}  />
-        <button onClick={handleLike} className={`like-btn ${liked ? 'liked' : ''}`}>
-        {liked ? '❤️' : '🤍'}
-      </button>
+      <img src={image.url} alt={image.title} />
+      <div className="image-actions">
+        <button onClick={handleLike}>❤️ Like</button>
+        <span>{likes} {likes === 1 ? "Like" : "Likes"}</span>
+      </div>
     </div>
-    </>
-    
-  )
-}
+  );
+};
 
-export default ImageCard
+export default ImageCard;

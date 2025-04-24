@@ -104,5 +104,19 @@
   .like-btn.liked {
     color: red;
   }
+  .image-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .image-actions button {
+    background: transparent;
+    border: none;
+    color: red;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
   
   
