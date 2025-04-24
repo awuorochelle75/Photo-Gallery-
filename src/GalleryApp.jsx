@@ -12,7 +12,7 @@ const GalleryApp = () => {
     axios.get(`http://localhost:3000/images`, {
       params: {
         _page: page,
-        _limit: 2  // or any number you want to load per scroll
+        _limit: 6  
       }
     })
     .then((response) => {
