@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ImageList from './components/ImageList';
-import Searchbar from './components/Searchbar';
+import Searchbar from './components/Searchbar'; // ✅ Make sure this path is correct
 import axios from 'axios';
 import Favourites from './components/Favourites';
 
@@ -9,35 +9,24 @@ const GalleryApp = () => {
   const [page, setPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
   const [favorites, setFavorites] = useState([]);
+
+  // ✅ New states for filtering
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
 
+  // ✅ Fetch images
   const fetchImages = () => {
-    if (isLoading) return; // Prevent multiple calls
     setIsLoading(true);
-    console.log(`Fetching page: ${page}`);
-
-    axios.get("http://localhost:3000/images", {
+    axios.get(`http://localhost:3000/images`, {
       params: {
         _page: page,
-        _limit: 29,  // Keep this to 29 images to match the available data
+        _limit: 29,
         _sort: 'id',
         _order: 'asc'
       }
     })
     .then((response) => {
-      // If there are images already loaded, append new ones from the beginning
-      setImages(prev => {
-        const totalImages = prev.length + response.data.length;
-
-        // If we've loaded all available images, start repeating them
-        if (totalImages >= 29) {
-          return [...prev, ...response.data]; // Repeat the same images
-        }
-        
-        // Otherwise, simply append new images
-        return [...prev, ...response.data];
-      });
+      setImages(prev => [...prev, ...response.data]);
       setIsLoading(false);
     })
     .catch((err) => {
@@ -46,6 +35,7 @@ const GalleryApp = () => {
     });
   };
 
+  // ✅ Handle likes
   const handleLike = (image) => {
     setFavorites(prev => {
       if (prev.find(img => img.id === image.id)) {
@@ -56,6 +46,7 @@ const GalleryApp = () => {
     });
   };
 
+  // ✅ Scroll loading
   useEffect(() => {
     fetchImages();
   }, [page]);
@@ -67,13 +58,17 @@ const GalleryApp = () => {
         document.documentElement.offsetHeight - 100 &&
         !isLoading
       ) {
-        setPage(prev => prev + 1); // Trigger load more when scrolled to the bottom
+        setPage(prev => prev + 1);
       }
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, [isLoading]);
+
+  const handleLoadMoreClick = () => {
+    setPage(prev => prev + 1);
+  };
 
   useEffect(() => {
     const savedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
@@ -88,6 +83,7 @@ const GalleryApp = () => {
     setFavorites(prev => prev.filter(img => img.id !== image.id));
   };
 
+  // ✅ Filtering logic
   const filteredImages = images.filter(image => {
     const matchesSearch =
       image.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -103,16 +99,27 @@ const GalleryApp = () => {
 
   return (
     <div className="gallery-container">
+      
+      
+
+      {/* ✅ Searchbar Integration */}
       <Searchbar
         onSearch={setSearchTerm}
         onCategoryChange={setSelectedCategory}
+        // Replace with actual handler
       />
 
-      <h1 className="gallery-title">From our Gallery</h1>
+<h1 className="gallery-title">From our Gallery</h1>
 
+      {/* ✅ Filtered image list */}
       <ImageList images={filteredImages} onLike={handleLike} />
 
       {isLoading && <p>Loading more images...</p>}
+      {!isLoading && (
+        <button className="load-more-btn" onClick={handleLoadMoreClick}>
+          Load More
+        </button>
+      )}
     </div>
   );
 };
