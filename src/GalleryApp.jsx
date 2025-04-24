@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ImageList from './components/ImageList';
 import axios from 'axios';
-import Favourites from './components/favourites';
+import Favourites from './components/Favourites';
 
 const GalleryApp = () => {
   const [images, setImages] = useState([]);
