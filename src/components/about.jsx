@@ -39,18 +39,7 @@ function About(){
                     <h5>MyPhotoGallery</h5>
                     <p>© {new Date().getFullYear()} All Rights Reserved</p>
                 <p>Created by Presbury Wamae, Rochelle Awour, and Neville Ng'ang'a</p>
-                   <h4>Connect With Us</h4>
-                  <div className="social-links">
-                        <p>Twitter</p>
-                        <p>Facebook</p>
-                        <p>Instagram</p>
-                   </div>
             </div>
-             <div className="social-links">
-                        <p>Twitter</p>
-                        <p>Facebook</p>
-                        <p>Instagram</p>
-                   </div>
     </section>
     )
  }
