@@ -96,9 +96,10 @@ nav ul li a{
   }
   
   .gallery-title {
-    text-align: center;
+    text-align: left;
     font-size: 2rem;
     margin-bottom: 30px;
+    margin-top: 30px;
     color: #333;
   }
   

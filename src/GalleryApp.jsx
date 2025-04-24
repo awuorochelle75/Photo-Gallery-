@@ -99,8 +99,8 @@ const GalleryApp = () => {
 
   return (
     <div className="gallery-container">
-      <Favourites favorites={favorites} onRemove={handleRemoveFavorite} />
-      <h1 className="gallery-title">My Photo Gallery</h1>
+      
+      
 
       {/* ✅ Searchbar Integration */}
       <Searchbar
@@ -108,6 +108,8 @@ const GalleryApp = () => {
         onCategoryChange={setSelectedCategory}
         // Replace with actual handler
       />
+
+<h1 className="gallery-title">From our Gallery</h1>
 
       {/* ✅ Filtered image list */}
       <ImageList images={filteredImages} onLike={handleLike} />
