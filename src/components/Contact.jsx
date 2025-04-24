@@ -1,43 +1,62 @@
-import React, { use, useState} from "react";
+import React from "react";
+import { useForm, ValidationError } from '@formspree/react';
+import "../Contact.css"
 
 function Contact(){
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-
-    const handleSubmit = (e) => {
-        e.preventDefault
-    }
+    const [state, handleSubmit] = useForm('xjkwvlrg'); 
 
     return(
+    <section>
         <div className="contact">
-            <h2>Contact Form</h2>
-            
+        <div className="contact-form">
             <form onSubmit={handleSubmit}>
-                <input
-                type="text"
-                placeholder="Your Name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                />
+            <label htmlFor="name">Name
+            <input id="name"
+                   type="text"
+                   name="name"
+                   placeholder="Your Name"/>
+             <ValidationError 
+                  prefix="Name" 
+                  field="name"
+                  errors={state.errors} /></label>
+            
+            <label htmlFor="email">Email
+            <input id="email"
+                   type="email"
+                   name="email"
+                   placeholder="Your Email"/>
+             <ValidationError 
+                  prefix="email" 
+                  field="email"
+                  errors={state.errors} /></label>
+
+
+            <label htmlFor="message">Message
+            <input id="message"
+                   type="message"
+                   name="message"
+                   placeholder="Your Message"/>
+             <ValidationError 
+                  prefix="message" 
+                  field="message"
+                  errors={state.errors} /></label>
                 
-                <input
-                type="email"
-                placeholder="Your Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                />
+              
                 
-                <textarea
-                placeholder="Your Message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                rows="4"
-                />
-                
-                <button type="submit">Send</button>
+                <button type="submit" disabled={state.submitting} >
+                    {state.submitting ? 'Sending...' : 'Send'}
+                    </button>
+
+                    {state.succeeded && (<p className="success-message">
+                    Message sent successfully! We'll respond shortly. </p>
+                    )}
             </form>
-     </div>       
+        </div>
+        <div className="contact-title-section">
+            <h1 className="contact-title">Contact Us</h1>
+        </div>
+     </div> 
+    </section>   
     )
 } 
 
