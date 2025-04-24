@@ -6,6 +6,7 @@ const GalleryApp = () => {
   const [images, setImages] = useState([]);
   const [page, setPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
+  const [hasMore, setHasMore] = useState(true);
 
   const fetchImages = () => {
     setIsLoading(true);
@@ -30,9 +31,9 @@ const GalleryApp = () => {
   const handleLike = (image) => {
     setFavorites(prev => {
       if (prev.find(img => img.id === image.id)) {
-        return prev.filter(img => img.id !== image.id); // un-like
+        return prev.filter(img => img.id !== image.id);
       } else {
-        return [...prev, image]; // like
+        return [...prev, image];
       }
     });
   };
