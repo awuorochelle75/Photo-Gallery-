@@ -55,7 +55,7 @@ nav ul li a{
 }
 
 .links:hover{
-   color:#FFDB58;
+   color:#f39c12;
    border-bottom: 1px solid #ffd700;
   
  
@@ -209,6 +209,13 @@ nav ul li a{
     font-size: 1.2rem;
     cursor: pointer;
   }
+
+  .links.active {
+    color: #f39c12; /* Or whatever style you want for active */
+    font-weight: bold;
+    border-bottom: 2px solid #f39c12;
+  }
+  
   
   
   
