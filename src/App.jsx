@@ -1,12 +1,16 @@
-import './App.css'
+import React, { useState } from "react"
+import About from "./components/About"
 import GalleryApp from './GalleryApp';
-
-
+import Contact from "./components/Contact";
+import './App.css'
 
 function App() {
+
   return (
     <>
-     <GalleryApp />
+      <About />
+      <Contact />
+      <GalleryApp />
     </>
   )
 }

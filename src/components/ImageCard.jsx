@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ImageCard = ({ image }) => {
+const ImageCard = ({ image, onLike }) => {
   const [likes, setLikes] = useState(image.likes || 0);
 
   const handleLike = () => {
@@ -15,6 +15,10 @@ const ImageCard = ({ image }) => {
       body: JSON.stringify({ likes: updatedLikes }),
     })
     .catch((error) => console.error('Error updating likes:', error));
+
+    if (onLike) {
+      onLike(image);
+    }
   };
 
   return (
