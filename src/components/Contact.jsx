@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useForm, ValidationError } from '@formspree/react';
 import "../Contact.css";
 import Navbar from './NavBar';
@@ -6,11 +6,38 @@ import { FaPhoneAlt, FaEnvelope, FaClock, FaMapMarkerAlt } from 'react-icons/fa'
 
 function Contact() {
     const [state, handleSubmit] = useForm('xjkwvlrg');
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    // Handle form field change
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
+    // Custom form submit
+    const handleCustomSubmit = (e) => {
+        e.preventDefault(); // Prevent default form submission
+        handleSubmit(e); // Submit using Formspree
+    };
+
+    // Reset form after successful submission
+    useEffect(() => {
+        if (state.succeeded) {
+            setFormData({ name: '', email: '', message: '' });
+        }
+    }, [state.succeeded]);
 
     return (
         <>
         <div className="navbar-contact">
-        <Navbar />
+            <Navbar />
         </div>
         <section className="contact-container">
             <div className="contact">
@@ -18,7 +45,7 @@ function Contact() {
                     <h1 className="contact-title">Contact Us</h1><br></br>
                     <p className="contact-subtext">We'd love to hear from you! Send us a message.</p>
                     
-                    {/* Added Contact Info */}
+                    {/* Contact Info */}
                     <div className="contact-info">
                         <div className="info-item">
                             <FaPhoneAlt className="info-icon" />
@@ -40,13 +67,16 @@ function Contact() {
                 </div>
 
                 <div className="contact-form">
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleCustomSubmit}>
                         <label htmlFor="name">Name
                             <input
                                 id="name"
                                 type="text"
                                 name="name"
-                                placeholder="Your Name" />
+                                placeholder="Your Name"
+                                value={formData.name}
+                                onChange={handleInputChange}
+                            />
                             <ValidationError
                                 prefix="Name"
                                 field="name"
@@ -58,7 +88,10 @@ function Contact() {
                                 id="email"
                                 type="email"
                                 name="email"
-                                placeholder="Your Email" />
+                                placeholder="Your Email"
+                                value={formData.email}
+                                onChange={handleInputChange}
+                            />
                             <ValidationError
                                 prefix="Email"
                                 field="email"
@@ -70,7 +103,10 @@ function Contact() {
                                 id="message"
                                 name="message"
                                 rows="5"
-                                placeholder="Your Message"></textarea>
+                                placeholder="Your Message"
+                                value={formData.message}
+                                onChange={handleInputChange}
+                            />
                             <ValidationError
                                 prefix="Message"
                                 field="message"
