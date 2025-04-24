@@ -6,14 +6,14 @@ const GalleryApp = () => {
   const [images, setImages] = useState([]);
   const [page, setPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
-  const [hasMore, setHasMore] = useState(true);
+
 
   const fetchImages = () => {
     setIsLoading(true);
     axios.get(`http://localhost:3000/images`, {
       params: {
         _page: page,
-        _limit: 6,
+        _limit: 29,
         _sort: 'id',
         _order: 'asc'  
       }
