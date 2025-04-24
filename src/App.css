@@ -1,3 +1,94 @@
+body{
+  padding:0;
+  margin:0
+}
+
+
+.header-content{
+  color:white;
+  display:flex;
+  justify-content: center;
+  padding:10px;
+  background-image: url("/images/hero.jpg");
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-wrap: wrap;
+  height:100vh;
+  width:100wh;
+  position: relative;
+
+}
+
+.header-text{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar ul{
+  list-style:none;
+  display: flex;
+  padding:10px; 
+   justify-content: center;
+  
+}
+
+.navbar ul li{
+  margin: 20px;
+ ;
+}
+
+nav ul li a{
+  color:white;
+  font-weight: bold;
+  text-decoration:none;
+  padding:30px;
+  font-display: bold;
+  font-size:1rem;
+ 
+ 
+}
+
+.links:hover{
+   color:#FFDB58;
+   border-bottom: 1px solid #ffd700;
+  
+ 
+}
+
+.searchbar{
+   
+  width:50%;
+  
+  /*The use of these two is what brings out that nice-looking search bar in my web page */
+  border: 0.5px solid #cccccc;
+  border-radius: 5px;
+  padding:20px;
+  text-align:center;
+  
+}
+
+.search{
+  display: block;
+ text-align: center;
+  padding:10px;
+  
+}
+
+.genre-filter{
+  margin:10px;
+}
+
+.upload-btn{
+ width: 100px;
+ height:80px;
+}
+
 .gallery-container {
     padding: 20px;
     max-width: 1200px;
@@ -118,5 +209,6 @@
     font-size: 1.2rem;
     cursor: pointer;
   }
+  
   
   
