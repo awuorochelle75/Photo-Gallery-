@@ -46,6 +46,11 @@ function About(){
                         <p>Instagram</p>
                    </div>
             </div>
+             <div className="social-links">
+                        <p>Twitter</p>
+                        <p>Facebook</p>
+                        <p>Instagram</p>
+                   </div>
     </section>
     )
  }

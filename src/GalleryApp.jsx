@@ -7,7 +7,7 @@ const GalleryApp = () => {
   const [images, setImages] = useState([]);
   const [page, setPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
-  const [favourite, setFavorites] = useState([])
+  const [favorites, setFavorites] = useState([])
 
   const fetchImages = () => {
     setIsLoading(true);
@@ -32,9 +32,9 @@ const GalleryApp = () => {
   const handleLike = (image) => {
     setFavorites(prev => {
       if (prev.find(img => img.id === image.id)) {
-        return prev.filter(img => img.id !== image.id); // un-like
+        return prev.filter(img => img.id !== image.id); 
       } else {
-        return [...prev, image]; // like
+        return [...prev, image]; 
       }
     });
   };
@@ -63,23 +63,23 @@ const GalleryApp = () => {
   };
 
   useEffect(() => {
-    const savedFavorites = JSON.parse(localStorage.getItem('favourites')) || [];
+    const savedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
     setFavorites(savedFavorites);
   }, []); 
 
   useEffect(() => {
-    localStorage.setItem('favourites', JSON.stringify(favorites));
+    localStorage.setItem('favorites', JSON.stringify(favorites));
   }, [favorites]);
  
-  const handleRemoveFavourite = (image) => {
-    setFavourites(prev => prev.filter(img => img.id !== image.id));
+  const handleRemoveFavorite = (image) => {
+    setFavorites(prev => prev.filter(img => img.id !== image.id));
   };
 
   return (
     <div className="gallery-container">
+      <Favourites favorites={favorites} onRemove={handleRemoveFavorite}/>
       <h1 className="gallery-title">My Photo Gallery</h1>
       <ImageList images={images}  onLike={handleLike} />
-      <Favourites favourites={favourites} onRemove={handleRemoveFavourite}/>
       {isLoading && <p>Loading more images...</p>}
       {!isLoading && (
         <button className="load-more-btn" onClick={handleLoadMoreClick}>

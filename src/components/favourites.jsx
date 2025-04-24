@@ -1,25 +1,25 @@
-import React,  { useState, useEffect} from "react";
+import React from "react";
+import "../Favourites.css"
 
 
-function Favourites({photo}) {
- const [favourite, setfavourite] = useState
-
- useEffect(() => {
-    const setFavourite = JSON.parse(localStorage.getItem('favourites') || '[]')
-    setfavourite(savedfavourite) 
- }, []) 
-
-    const removeFavourite = 0
-
+function Favourites({favorites = [], onRemove}) {
     return(
         <section>
             <div className="favourites-header">
-                <h2>Favourites</h2>
+                <h2>Favourites ({ favorites.length })</h2>
             </div>
             <div className="favourites-container">
-                <ul></ul>
+             <div className="favourites-grid">
+                {favorites.map((image) => (
+                    <div key={image.id} className="favourite-item">
+                     <img src={image.url} alt={image.title} />
+                        <button   className="remove-btn" onClick={() => onRemove(image)}> Remove
+                        </button>
+                    </div>
+                    ))}
+                </div>
             </div>
-        </section>
+       </section>
      )
 }
 
