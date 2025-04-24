@@ -19,29 +19,21 @@
 }
 
 
+
+
 .contact-title-section {
-    flex: 1;
-    background-image:url(" src/luxury-plain-green-gradient-abstract-studio-background-empty-room-with-space-your-text-picture_1258-63953.avif");
-    background-size: cover;
-    background-position: center;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
+  flex: 1;
+  background-image: url("src/luxury-plain-green-gradient-abstract-studio-background-empty-room-with-space-your-text-picture_1258-63953.avif");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column; /* <-- Added this line */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Optional: if you want content vertically centered */
+  padding: 2rem;
+  text-align: center;
 }
 
-.contact-title {
-    position: absolute;
-    bottom: 2rem;
-    left: 2rem;
-    position: relative;
-    color:black;
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin: 0;
-    text-align: center; 
-    padding: 2rem;
-    width: 100%; 
-}
 
   
   .contact label {
@@ -89,3 +81,21 @@
     font-size: 0.9rem;
     margin-top: 0.25rem;
   }
+
+  .contact-title {
+    color: black;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    text-align: center; 
+    padding: 2rem;
+    width: 100%; 
+}
+
+.contact-subtext {
+    margin-top: 1rem;
+    font-size: 28px; /* Adds space between title and subtext */
+}
+.navbar-contact{
+  background-color: black;
+}
