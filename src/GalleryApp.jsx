@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ImageList from './components/ImageList';
+import axios from 'axios';
 
 const GalleryApp = () => {
   const [images, setImages] = useState([]);
