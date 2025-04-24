@@ -1,8 +1,6 @@
 import React from 'react';
 import Navbar from './NavBar';
 
-
-
 function  Header  ({headtext}) {
   return (
     <header className="header">

@@ -1,0 +1,64 @@
+.favourites-header {
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  text-align: center; /* Center align header content */
+}
+
+.favourites-header h2 {
+  font-size: 1.8rem;
+  color: #333;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1rem; /* Space for underline */
+  margin: 0 auto; /* Center the heading */
+}
+
+/* Add horizontal line under heading */
+.favourites-header h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #eee;
+}
+
+.favourites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.favourite-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.favourite-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.remove-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.remove-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}

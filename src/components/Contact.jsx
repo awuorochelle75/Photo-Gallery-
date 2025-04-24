@@ -1,12 +1,14 @@
 import React from "react";
 import { useForm, ValidationError } from '@formspree/react';
-import "../Contact.css"
+import "../component css/Contact.css"
+import NavBar from "./NavBar";
 
 function Contact(){
     const [state, handleSubmit] = useForm('xjkwvlrg'); 
 
     return(
     <section>
+        <div className="NavBar">  <NavBar /></div>
         <div className="contact">
         <div className="contact-form">
             <form onSubmit={handleSubmit}>
