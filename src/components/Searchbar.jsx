@@ -11,7 +11,7 @@ function Searchbar({onSearch, onCategoryChange, onUpload}) {
         if (onSearch) {
             onSearch(term); 
         }
-    };    
+    };   
 
     const handleCategoryChange = (e) => {
         const category = e.target.value;
@@ -47,9 +47,6 @@ function Searchbar({onSearch, onCategoryChange, onUpload}) {
     <option value="events">Events</option>
 </select>
 
-<button className="upload-btn"  onClick={handleUploadClick} >
-          Upload Image
-        </button>
 
 
         </div>
