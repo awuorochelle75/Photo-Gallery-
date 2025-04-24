@@ -12,7 +12,7 @@ const GalleryApp = () => {
     axios.get(`http://localhost:3000/images`, {
       params: {
         _page: page,
-        _limit: 6  
+        _limit: 6 
       }
     })
     .then((response) => {
