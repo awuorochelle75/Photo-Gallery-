@@ -32,13 +32,11 @@ function App() {
 
 
   return (
-    <Router>
-      <Header headtext={title} />
-      
+    <Router>      
       <Routes>
-        {/* Home route - contains Searchbar and future gallery */}
         <Route path="/" element={
           <div className="home-page">
+            <Header headtext={title} />
             <Searchbar />
             <GalleryApp favorites={favorites} onLike={handleLike} />
           </div>
