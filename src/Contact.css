@@ -52,7 +52,7 @@
   }
   
   .contact button {
-    background: #4e54c8;
+    background: #0f5f1d;
     color: white;
     padding: 1rem;
     border: none;
@@ -98,4 +98,11 @@
 }
 .navbar-contact{
   background-color: black;
+}
+
+.button-contact{
+  margin-top:10px;
+  width:150px;
+text-align: center;
+background-color:#D4AF37 ;
 }
