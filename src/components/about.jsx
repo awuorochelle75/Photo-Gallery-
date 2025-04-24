@@ -1,10 +1,12 @@
 import React from "react";
-import "../About.css"
+import "../component css/About.css"
+import NavBar from "./NavBar";
 
 function About(){
     return(
         <section
             className="about-section">
+                <div className="Navbar"><NavBar/></div>
                     <div className="about-title">
                     <h2>About Us</h2>
                     </div>

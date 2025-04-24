@@ -1,10 +1,12 @@
 import React from "react";
-import "../Favourites.css"
+import "../component css/Favourites.css"
+import NavBar from "./NavBar";
 
 
-function Favourites({favorites = [], onRemove}) {
+function Favourites({favorites, onRemove}) {
     return(
         <section>
+            <div className="Navbar"><NavBar/></div>
             <div className="favourites-header">
                 <h2>Favourites ({ favorites.length })</h2>
             </div>
