@@ -9,12 +9,13 @@ const GalleryApp = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [favorites, setFavorites] = useState([])
 
+
   const fetchImages = () => {
     setIsLoading(true);
     axios.get(`http://localhost:3000/images`, {
       params: {
         _page: page,
-        _limit: 6,
+        _limit: 29,
         _sort: 'id',
         _order: 'asc'  
       }
@@ -35,6 +36,9 @@ const GalleryApp = () => {
         return prev.filter(img => img.id !== image.id); 
       } else {
         return [...prev, image]; 
+        return prev.filter(img => img.id !== image.id);
+      } else {
+        return [...prev, image];
       }
     });
   };
