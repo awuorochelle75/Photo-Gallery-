@@ -56,17 +56,6 @@
       "tags": ["portrait", "monochrome", "contrast"]
     },
     {
-      "id": 6,
-      "url": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5",
-      "width": 6000,
-      "height": 4000,
-      "title": "Abstract Shapes",
-      "description": "Colorful geometric patterns",
-      "likes": 765,
-      "category": "Abstract",
-      "tags": ["colors", "shapes", "art"]
-    },
-    {
       "id": 7,
       "url": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df",
       "width": 5000,
@@ -120,17 +109,6 @@
       "likes": 1234,
       "category": "Food Photography",
       "tags": ["vegetables", "healthy", "fresh"]
-    },
-    {
-      "id": 12,
-      "url": "https://images.unsplash.com/photo-1469334031218-e382a71b716b",
-      "width": 4000,
-      "height": 6000,
-      "title": "Luxury Fashion",
-      "description": "High-end designer clothing",
-      "likes": 987,
-      "category": "Fashion",
-      "tags": ["luxury", "designer", "style"]
     },
     {
       "id": 13,
