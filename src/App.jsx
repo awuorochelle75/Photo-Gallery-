@@ -5,9 +5,9 @@ import Header from './components/Header';
 import Searchbar from './components/Searchbar';
 import './App.css';
 import GalleryApp from './GalleryApp';
-import about from './components/About';
+import About from './components/About';
 import Contact from './components/Contact';
-import favourites from './components/Favourites';
+import Favourites from './components/Favourites';
 
 function App() {
   const [title] = useState("PhoGalleria");
@@ -28,9 +28,7 @@ function App() {
         {/* About */}
   <Route path="/about" element={<About />} />
 {/* Contact */}
-<Route path="/contact" element={<Contact />} />
-
-
+  <Route path="/contact" element={<Contact />} />
 
 
       </Routes>

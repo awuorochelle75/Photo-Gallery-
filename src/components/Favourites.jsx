@@ -23,4 +23,4 @@ function Favourites({favorites = [], onRemove}) {
      )
 }
 
-export default Favourites
+export default Favourites;
